@@ -33,8 +33,7 @@ download_release() {
 	version="$1"
 	filename="$2"
 
-	# TODO: Adapt the release URL convention for mariadb
-	url="$GH_REPO/archive/v${version}.tar.gz"
+	url="$GH_REPO/archive/refs/tags/mariadb-${version}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
