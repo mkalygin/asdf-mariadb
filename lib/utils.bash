@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for mariadb.
-GH_REPO="https://github.com/mariadb"
+GH_REPO="https://github.com/mariadb/server"
 TOOL_NAME="mariadb"
 TOOL_TEST="mariadb --version"
 
